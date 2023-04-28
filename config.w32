@@ -1,0 +1,7 @@
+ARG_ENABLE('stmr', 'stmr support', 'no');
+
+if (PHP_STMR != 'no') {
+	AC_DEFINE('HAVE_STMR', 1, 'stmr support enabled');
+
+	EXTENSION('stmr', 'php_stmr.c', null, '/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1');
+}
