@@ -1,16 +1,16 @@
 --TEST--
-Check if hello is loaded
+Check if stmr is loaded
 --SKIPIF--
 <?php
-if (!extension_loaded('hello')) {
+if (!extension_loaded('stmr')) {
 	echo 'skip';
 }
 ?>
 --FILE--
-<?php 
-if (extension_loaded('hello')) {
-    echo 'The extension "hello" is available';
+<?php
+if (extension_loaded('stmr')) {
+    echo 'The extension "stmr" is available';
 }
 ?>
 --EXPECT--
-The extension "hello" is available
+The extension "stmr" is available

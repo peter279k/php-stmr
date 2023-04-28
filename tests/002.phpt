@@ -1,14 +1,14 @@
 --TEST--
-say_hello() test without parameters
+stem() test without parameters
 --SKIPIF--
 <?php
-if (!extension_loaded('hello')) {
+if (!extension_loaded('stmr')) {
 	echo 'skip';
 }
 ?>
 --FILE--
-<?php 
-say_hello();
+<?php
+stem();
 ?>
 --EXPECT--
-Hello World!
+world
