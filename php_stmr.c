@@ -67,7 +67,7 @@ PHP_MINFO_FUNCTION(stem)
     php_info_print_table_end();
 }
 
-zend_module_entry hello_module_entry = {
+zend_module_entry stmr_module_entry = {
     STANDARD_MODULE_HEADER,
     "stmr", /* Extension name */
     stem_functions, /* zend_function_entry */
