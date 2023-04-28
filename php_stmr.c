@@ -76,7 +76,7 @@ zend_module_entry hello_module_entry = {
     PHP_RINIT(stem), /* PHP_RINIT - Request initialization */
     PHP_RSHUTDOWN(stem), /* PHP_RSHUTDOWN - Request shutdown */
     PHP_MINFO(stem), /* PHP_MINFO - Module info */
-    PHP_STEM_VERSION, /* Version */
+    PHP_STMR_VERSION, /* Version */
     STANDARD_MODULE_PROPERTIES
 };
 
@@ -84,5 +84,5 @@ zend_module_entry hello_module_entry = {
 # ifdef ZTS
 ZEND_TSRMLS_CACHE_DEFINE()
 # endif
-ZEND_GET_MODULE(stem)
+ZEND_GET_MODULE(stmr)
 #endif
